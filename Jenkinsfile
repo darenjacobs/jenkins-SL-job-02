@@ -1,26 +1,5 @@
-pipeline {
-    agent any
-
-    stages {
-        stage ('Compile Stage') {
-
-            steps {
-                sh 'mvn clean compile'
-            }
-        }
-
-        stage ('Testing Stage') {
-
-            steps {
-                sh 'mvn test'
-            }
-        }
-
-
-        stage ('Deployment Stage') {
-            steps {
-                sh 'mvn deploy'
-            }
-        }
-    }
+@Library("jenkins-shared-library") _
+pl_02 {
+    projectName = "Project1"
+    serverDomain = "Project1 Server Domain Test"
 }
