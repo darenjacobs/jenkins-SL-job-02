@@ -1,4 +1,4 @@
-package com.dtjesting.maven;
+package com.techprimers.testing;
 
 public class FizzBuzz {
 

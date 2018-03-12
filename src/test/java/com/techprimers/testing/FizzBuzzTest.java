@@ -1,4 +1,4 @@
-package com.djtesting.maven;
+package com.techprimers.testing;
 
 import org.junit.jupiter.api.*;
 
